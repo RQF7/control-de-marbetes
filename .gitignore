@@ -2,3 +2,6 @@
 # Archivos temporales de vim
 *.swp
 
+entorno_virtual
+
+datos.json

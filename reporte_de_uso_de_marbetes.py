@@ -38,7 +38,7 @@ def esperar_a_servidor(navegador):
 if __name__ == '__main__':
 
     # Carga inicial desde trámites y servicios
-    navegador = selenium.webdriver.Chrome()
+    navegador = selenium.webdriver.Firefox()
     navegador.get('https://www.sat.gob.mx/tramites/67622/' +
                   'registro-de-uso-de-marbetes-obtenidos,' +
                   '-utilizados,-destruidos-e-inutilizados-')
@@ -158,5 +158,4 @@ if __name__ == '__main__':
             'formRegistroGeneral:retroalimentacionView:' +
             'btnAgregarFolioListaRetro')
         boton_guardar_rango.click()
-        break
-
+        esperar_a_servidor(navegador)
